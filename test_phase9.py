@@ -56,7 +56,7 @@ def run_explanation(dataset_name, sensitive_col, privileged_val, model_name):
 # ADULT INCOME — LOGISTIC REGRESSION (most interpretable)
 # ══════════════════════════════════════════════════════════════════════════════
 print("\n" + "🔵 "*20)
-print("PHASE 9: ADULT INCOME — SHAP with Logistic Regression")
+print(" ADULT INCOME — SHAP with Logistic Regression")
 print("🔵 "*20)
 
 adult_lr_results = run_explanation(
@@ -70,7 +70,7 @@ adult_lr_results = run_explanation(
 # ADULT INCOME — RANDOM FOREST (highest AUC)
 # ══════════════════════════════════════════════════════════════════════════════
 print("\n" + "🔵 "*20)
-print("PHASE 9: ADULT INCOME — SHAP with Random Forest")
+print(" ADULT INCOME — SHAP with Random Forest")
 print("🔵 "*20)
 
 adult_rf_results = run_explanation(
@@ -84,7 +84,7 @@ adult_rf_results = run_explanation(
 # GERMAN — LOGISTIC REGRESSION on age_group
 # ══════════════════════════════════════════════════════════════════════════════
 print("\n" + "🟡 "*20)
-print("PHASE 9: GERMAN CREDIT — SHAP on age_group")
+print("GERMAN CREDIT — SHAP on age_group")
 print("🟡 "*20)
 
 german_results = run_explanation(
@@ -132,6 +132,5 @@ print("""
   ─────────────────────────────────────────────────────────────────────
 """)
 
-print("✅ Phase 9 complete!")
+
 print("   Figures saved to: reports/figures/")
-print("   → Next: Phase 10 & 11 — Multi-model comparison + Visualization")

@@ -41,21 +41,21 @@ def run_mitigation(dataset_name, sensitive_col, privileged_val):
 
 # ── Adult: sex attribute ───────────────────────────────────────────────────────
 print("\n" + "🔵 "*20)
-print("PHASE 8: ADULT INCOME — MITIGATION ON [sex]")
+print(" ADULT INCOME — MITIGATION ON [sex]")
 print("🔵 "*20)
 
 adult_sex_results = run_mitigation("adult", "sex", "Male")
 
 # ── Adult: race attribute ──────────────────────────────────────────────────────
 print("\n" + "🔵 "*20)
-print("PHASE 8: ADULT INCOME — MITIGATION ON [race]")
+print(" ADULT INCOME — MITIGATION ON [race]")
 print("🔵 "*20)
 
 adult_race_results = run_mitigation("adult", "race", "White")
 
 # ── German: age_group attribute ───────────────────────────────────────────────
 print("\n" + "🟡 "*20)
-print("PHASE 8: GERMAN CREDIT — MITIGATION ON [age_group]")
+print(" GERMAN CREDIT — MITIGATION ON [age_group]")
 print("🟡 "*20)
 
 german_age_results = run_mitigation("german", "age_group", "adult")
@@ -93,5 +93,3 @@ print("""
   This is a BUSINESS and ETHICAL decision, not a technical one.
 """)
 
-print("✅ Phase 8 complete!")
-print("   → Next: Phase 9 — Explainability (SHAP + Feature Importance)")

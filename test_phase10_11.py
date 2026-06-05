@@ -138,7 +138,7 @@ def run_full_visual_audit(dataset_name, sensitive_col,
 # ADULT — sex attribute
 # ══════════════════════════════════════════════════════════════════════════════
 print("\n" + "🔵 "*20)
-print("PHASES 10 & 11: ADULT INCOME — FULL VISUAL AUDIT")
+print(" ADULT INCOME — FULL VISUAL AUDIT")
 print("🔵 "*20)
 
 run_full_visual_audit(
@@ -152,7 +152,7 @@ run_full_visual_audit(
 # GERMAN — age_group attribute
 # ══════════════════════════════════════════════════════════════════════════════
 print("\n" + "🟡 "*20)
-print("PHASES 10 & 11: GERMAN CREDIT — FULL VISUAL AUDIT")
+print(" GERMAN CREDIT — FULL VISUAL AUDIT")
 print("🟡 "*20)
 
 run_full_visual_audit(
@@ -209,6 +209,3 @@ print("""
   → "My auto-detection found proxy features without prior knowledge"
   ─────────────────────────────────────────────────────────────────
 """)
-
-print("✅ Phases 10 & 11 complete!")
-print("   → Final Phase: Streamlit UI (Phase 12)")

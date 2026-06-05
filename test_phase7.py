@@ -13,9 +13,6 @@ from src.auto_sensitive    import AutoSensitiveDetector
 # ══════════════════════════════════════════════════════════════════════════════
 # ADULT INCOME DATASET
 # ══════════════════════════════════════════════════════════════════════════════
-print("\n" + "🔵 "*20)
-print("PHASE 7: ADULT INCOME — AUTO SENSITIVE DETECTION")
-print("🔵 "*20)
 
 adult_df = DataLoader("adult").load()
 
@@ -49,7 +46,7 @@ if flagged_di is not None and not flagged_di.empty:
 # GERMAN CREDIT DATASET
 # ══════════════════════════════════════════════════════════════════════════════
 print("\n" + "🟡 "*20)
-print("PHASE 7: GERMAN CREDIT — AUTO SENSITIVE DETECTION")
+print(" GERMAN CREDIT — AUTO SENSITIVE DETECTION")
 print("🟡 "*20)
 
 german_df = DataLoader("german").load()
@@ -89,5 +86,3 @@ print("""
   This is what separates a toy project from a real AI audit system.
 """)
 
-print("✅ Phase 7 complete!")
-print("   → Next: Phase 8 — Bias Mitigation (fixing what we found)")

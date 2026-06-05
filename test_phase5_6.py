@@ -92,9 +92,6 @@ def run_bias_audit(dataset_name: str, privileged_groups: dict):
 # RUN BOTH DATASETS
 # ══════════════════════════════════════════════════════════════════════════════
 
-print("\n" + "🔵 "*20)
-print("PHASE 5 & 6: ADULT INCOME — BIAS DETECTION")
-print("🔵 "*20)
 
 adult_reports, adult_trainer, adult_prep = run_bias_audit(
     dataset_name      = "adult",
@@ -150,5 +147,3 @@ print("""
   NEXT STEP: Phase 7 (Auto-detect sensitive attributes) +
              Phase 8 (Bias Mitigation — fix the bias we just measured)
 """)
-
-print("✅ Phase 5 & 6 complete!")

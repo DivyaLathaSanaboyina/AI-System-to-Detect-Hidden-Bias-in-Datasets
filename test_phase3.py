@@ -83,7 +83,6 @@ assert abs(y_train_g.mean() - y_test_g.mean()) < 0.02, \
 train_mean = X_train_a[:, 0].mean()
 print(f"  Adult train col-0 mean (should be ≈ 0.0): {train_mean:.4f}")
 
-print("\n✅ ALL CHECKS PASSED — Phase 3 complete!")
 print("\n🔑 Key preprocessing decisions made:")
 print("  1. Dropped 'fnlwgt' (census weight, not a real feature)")
 print("  2. Imputed missing with mode/median (not dropped — avoids selection bias)")

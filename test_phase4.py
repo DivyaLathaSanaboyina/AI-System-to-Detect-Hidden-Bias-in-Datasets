@@ -77,6 +77,3 @@ print(adult_trainer.get_comparison_dataframe().round(4).to_string())
 
 print("\n📊 German Results DataFrame:")
 print(german_trainer.get_comparison_dataframe().round(4).to_string())
-
-print("\n✅ Phase 4 complete! Models trained and saved to models/")
-print("   → Next: Phase 5 — Bias Detection on these exact predictions")
